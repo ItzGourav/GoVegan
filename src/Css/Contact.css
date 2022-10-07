@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,900;1,400;1,500;1,900&display=swap');
+
+
+#ContactUs {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15vh;
+    color: aliceblue;
+    width: 100%;
+    height: auto;
+    background-image: url('/public/salad.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.772);
+    background-blend-mode: darken;
+}
+
+.contactDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.inputForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm input {
+    margin-top: 1em;
+    text-align: center;
+
+    border: none;
+    outline: none;
+
+    border-bottom: 3px solid #25C244;
+    padding: 5px;
+
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.inputForm button {
+    margin: 2em auto;
+    width: 5em;
+}
+
+.footer {
+    padding: 2em;
+    text-align: center;
+}
+
+#ContactUs h1 {
+    margin-top: .1em;
+}
+
+.contactLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactLinks p {
+    display: flex;
+    align-items: center;
+}
+
+.contactLinks .icons {
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+.iconss {
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+.textarea {
+    margin-top: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #25C244;
+    color: whitesmoke
+}
+
+.linkIcons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linkIcons a{
+    color: aliceblue;
+}
+
+.linkIcons a:hover{
+    color: rgb(18, 89, 232);
+}
+
+@media (max-width:800px) {
+    .contactDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactLinks {
+        margin-top: 3em;
+    }
+}
+

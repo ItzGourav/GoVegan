@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,900;1,400;1,500;1,900&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #25C244;
+    color: whitesmoke;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.461);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.navbar .navbar_links .navbar_list {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar .navbar_links ul li {
+    cursor: pointer;
+    margin-right: 2em;
+}
+
+.navbar .navbar_links ul li .links {
+    text-decoration: none;
+    /* color: aliceblue; */
+    color: whitesmoke;
+}
+
+.navbar .navbar_links ul li .links:hover{
+    background-color: #25C244;
+    padding: .3em;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px grey;
+    color: aliceblue;
+    transition: 0.2s;
+}
+
+
+
+.hamburger {
+    position: absolute;
+    top: .30em;
+    right: 2%;
+    font-size: 45px;
+    color: white;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+/* .active .hamburger_btn[name="close-outline"] {
+    color: black;
+} */
+
+/* .hamburger_btn[name="menu-outline"] {
+    color: aliceblue;
+} */
+
+/* .hamburger_btn{
+    color: aliceblue;
+} */
+
+/* .hamburger_btn[name="close-outline"],
+.active .hamburger_btn[name="menu-outline"] {
+    display: none;
+}
+
+.active .hamburger_btn[name="close-outline"] {
+    display: block;
+    visibility: hidden;
+} */
+
+
+.brand img {
+    height: 3em;
+    width: 12em;
+    margin: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:780px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .navbar_links .navbar_list {
+        width: 40%;
+        height: 50vh;
+        top: 0;
+        right: 0;
+        background-color: aliceblue;
+        border-bottom-left-radius: 0.5em;
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(50%);
+        transition: all .25s linear;
+
+        opacity: 0;
+        visibility: visible;
+        pointer-events: none;
+
+        box-shadow: -1px 2px 15px rgb(136, 136, 136);
+        /* -webkit-box-shadow: 6px 6px 18px 18px rgba(153, 153, 153, 0.6);
+        -moz-box-shadow: 6px 6px 18px 18px rgba(153, 153, 153, 0.6);
+        box-shadow: 6px 6px 18px 18px rgba(153, 153, 153, 0.6); */
+    }
+
+    .navbar_links ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        padding: 1.5em;
+    }
+
+    .navbar .navbar_links ul li .links {
+        text-decoration: none;
+        color: black;
+    }
+
+    .hamburger {
+        visibility: visible;
+        color: black;
+    }
+
+    .active .navbar_links .navbar_list {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
